@@ -1,0 +1,11 @@
+baseURL = "https://tetsuakira-vk.github.io/visualkei-news/"
+languageCode = "en-us"
+title = "Visual Kei News"
+theme = "PaperMod"
+
+[params]
+  env = "production"
+  disableGoogleAnalytics = true
+  ShowReadingTime = true
+  ShowShareButtons = true
+
