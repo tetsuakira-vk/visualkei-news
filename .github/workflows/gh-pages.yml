@@ -27,9 +27,9 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          deploy_branch: gh-pages
           publish_dir: ./public
-          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           user_name: tetsuakira-vk
           user_email: tetsuakira-vk@users.noreply.github.com
 
