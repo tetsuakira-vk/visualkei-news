@@ -3,9 +3,49 @@ languageCode = "en-us"
 title = "Visual Kei News"
 theme = "PaperMod"
 
+# Enable dark mode and visual settings
+defaultContentLanguage = "en"
+paginate = 10
+
 [params]
   env = "production"
-  disableGoogleAnalytics = true
+  title = "Visual Kei News"
+  description = "Latest updates, releases, and underground Visual Kei scene coverage"
+  keywords = ["Visual Kei", "J-Rock", "J-Music", "Bands", "News"]
+  author = "TetsuAkira"
   ShowReadingTime = true
   ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = false
+  defaultTheme = "dark"       # Load site in dark mode by default
+  disableThemeToggle = false  # Allow users to switch between light/dark
+  disableGoogleAnalytics = true
+
+[params.homeInfoParams]
+  Title = "Welcome to Visual Kei News"
+  Content = "Discover the latest in Visual Kei and J-Rock — translated news, indie band updates, discographies and more."
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/tetsuakira-vk"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/yourhandle"  # replace with yours
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Bands"
+    url = "/bands"
+    weight = 2
+
+  [[menu.main]]
+    name = "News"
+    url = "/news"
+    weight = 3
 
