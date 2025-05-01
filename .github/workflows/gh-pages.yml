@@ -9,18 +9,24 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout source
+        uses: actions/checkout@v2
         with:
-          submodules: true
+          submodules: true  # Fetch theme as submodule
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
-      - name: Build
+          hugo-version: '0.118.2'  # Stable version
+
+      - name: Build site
         run: hugo --minify
-      - name: Deploy
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          user_name: "tetsuakira-vk"
+          user_email: "tetsuakira-vk@users.noreply.github.com"
 
