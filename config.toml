@@ -18,7 +18,7 @@ paginate = 10
   ShowPostNavLinks = true
   ShowCodeCopyButtons = false
   defaultTheme = "dark"       # Load site in dark mode by default
-  disableThemeToggle = false  # Allow users to switch between light/dark
+  disableThemeToggle = true  # Allow users to switch between light/dark
   disableGoogleAnalytics = true
 
 [params.homeInfoParams]
